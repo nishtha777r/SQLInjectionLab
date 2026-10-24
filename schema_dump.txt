@@ -1,0 +1,14 @@
+Table: lab_notes
+CREATE TABLE lab_notes (
+                id INTEGER PRIMARY KEY,
+                title TEXT NOT NULL,
+                content TEXT NOT NULL
+            )
+
+Table: users
+CREATE TABLE users (
+                id INTEGER PRIMARY KEY,
+                username TEXT NOT NULL UNIQUE,
+                password TEXT NOT NULL,
+                role TEXT NOT NULL
+            )
